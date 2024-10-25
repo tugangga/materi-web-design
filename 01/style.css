@@ -1,0 +1,177 @@
+/* ----------- root ------------- */
+:root {
+  --grey: #eeeeee;
+  --blue1: #dff2eb;
+  --blue2: #b9e5e8;
+  --blue3: #7ab2d3;
+  --blue4: #4a628a;
+  --image1: url(images/me-n-train.jpg);
+  --image2: url(images/herringbone.webp);
+}
+/* -------------------------------- */
+
+/* -- Utility classes -- */
+.shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.biru {
+  color: dodgerblue;
+}
+
+.grey {
+  background-color: var(--grey);
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.rotate-r {
+  transform: rotate(5deg);
+}
+
+.rotate-l {
+  transform: rotate(-5deg);
+}
+
+.content-grid {
+  display: flex;
+}
+/* ---------------------  */
+
+body {
+  /* background-color: var(--grey); */
+  background-color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.section {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.image {
+  max-width: 600px;
+  width: 70%;
+  margin: 0 1rem 1rem 1rem;
+  border: 2rem solid white;
+  border-image: 1 linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.3));
+}
+
+/* ----------------------------------------------nav */
+nav {
+  padding: 1.3rem;
+  background-color: #fff;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+nav .logo-alfa-prima {
+  position: absolute;
+  top: -1rem;
+}
+
+.logo-alfa-prima svg {
+  transform: scale(0.8);
+}
+
+.nav {
+  /* margin-left: 5rem; */
+  position: absolute;
+  right: 0;
+}
+
+.container-nav {
+  position: relative;
+  height: 1.2rem;
+}
+
+.nav a {
+  padding: 16px;
+  color: var(--blue4);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: padding 0.3s;
+}
+
+.nav a:hover {
+  border-bottom: 3px solid var(--blue4);
+  padding-bottom: 2px;
+}
+
+/* ------------------------------------------------header */
+.hero {
+  padding-top: 70px;
+  margin-bottom: 10px;
+  height: 700px;
+  background-image: var(--image1);
+  background-size: cover;
+  background-position: center top;
+  place-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  /* border-width: 10px;
+  border-style: solid; */
+  border-image-source: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  border-image-slice: fill 1;
+}
+
+.photo-profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 1px solid black;
+}
+
+.nama {
+  font-size: 2rem;
+  margin: 16px 0;
+}
+.job {
+  font-size: 1.8rem;
+}
+
+.nim,
+.angkatan {
+  font-size: 1.1rem;
+  margin: 14px 0 0 0;
+}
+
+.nim span {
+  /* color: var(--blue1);
+  background-color: var(--blue4); */
+  padding: 8px 12px 0 12px;
+}
+
+/* -------------------------footer */
+footer {
+  background-color: rgb(39, 39, 39);
+  height: 15rem;
+  padding-top: 5rem;
+}
+
+footer p {
+  text-align: center;
+  color: var(--blue1);
+}
